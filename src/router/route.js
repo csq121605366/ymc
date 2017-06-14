@@ -7,8 +7,8 @@ import Router from 'vue-router'
 // import ratings from '../components/ratings/ratings'
 
 // 单项懒加载
-// const goods = r => require(['../components/goods/goods'], )
-// const seller = r => require(['../components/seller/seller'], r)
+const home = r => require(['../components/home/home'], r)
+const about = r => require(['../components/about/about'], r)
 // const ratings = r => require(['../components/ratings/ratings'], r)
 
 // 分组懒加载
@@ -27,10 +27,11 @@ Vue.use(Router)
 export default new Router({
   mode: 'history',
   base: __dirname,
-  linkActiveClass: 'active'
-  // routes: [
-  //   {path: '/goods', component: goods},
-  //   {path: '/seller', component: seller},
-  //   {path: '/ratings', component: ratings}
-  // ]
+  linkActiveClass: 'active',
+  routes: [
+    {path: '/', redirect: '/home'},
+    {path: '/home', component: home},
+    {path: '/aboutUs', component: about},
+    {path: '*', redirect: '/'}
+  ]
 })
