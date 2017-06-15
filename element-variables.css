@@ -11,17 +11,23 @@
 
   /* Colors
   -------------------------- */
-  --color-primary: #20a0ff;
 
-  --color-success: #13ce66;
+  /*--color-primary: #20a0ff;*/
+  --color-primary: #259cef;
+
+  /*--color-success: #13ce66;*/
+  --color-success: #03a914;
   --color-warning: #f7ba2a;
-  --color-danger: #ff4949;
-  --color-info: #50bfff;
+  /*--color-danger: #ff4949;*/
+  --color-danger: #ff0000;
+  // --color-info: #50bfff;
+  --color-info: #44befe;
 
   --color-secondary: color(var(--color-primary) s(99%) l(*0.9));
   --color-white: #fff;
   --color-dark-white: color(var(--color-white) blend(var(--color-primary) 2%));
   --color-black: #000;
+
 
   --color-base-black: color(var(--color-primary) h(+6) s(33%) l(18%));
   --color-light-black: color(var(--color-base-black) h(+5) s(27%) l(27%));
@@ -333,12 +339,14 @@
   -------------------------- */
   --button-font-size: 14px;
   --button-border-radius: var(--border-radius-base);
-  --button-padding-vertical: 10px;
-  --button-padding-horizontal: 15px;
+
+  --button-padding-vertical: 11px;
+  --button-padding-horizontal: 30px;
 
   --button-large-font-size: 16px;
-  --button-large-padding-vertical: 11px;
-  --button-large-padding-horizontal: 19px;
+  --button-large-padding-vertical: 15px;
+  --button-large-padding-horizontal: 35px;
+
 
   --button-small-font-size: 12px;
   --button-small-padding-vertical: 7px;

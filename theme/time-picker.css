@@ -513,7 +513,7 @@
     font-size: 14px;
     margin-top: -15px;
     line-height: 16px;
-    background-color: #20a0ff;
+    background-color: #259cef;
     height: 32px;
     z-index: -1;
     left: 0;
@@ -558,7 +558,7 @@
 }
 .el-time-panel__btn.confirm {
     font-weight: 800;
-    color: #20a0ff;
+    color: #259cef;
 }
 @charset "UTF-8";
 :root {
@@ -674,7 +674,7 @@
 }
 .el-input.is-active .el-input__inner {
     outline: none;
-    border-color: #20a0ff;
+    border-color: #259cef;
 }
 .el-input__inner {
     -webkit-appearance: none;
@@ -709,7 +709,7 @@
 }
 .el-input__inner:focus {
     outline: none;
-    border-color: #20a0ff;
+    border-color: #259cef;
 }
 .el-input__icon {
     position: absolute;
@@ -860,7 +860,7 @@
 }
 .el-textarea__inner:focus {
     outline: none;
-    border-color: #20a0ff;
+    border-color: #259cef;
 }
 @charset "UTF-8";
 :root {
@@ -1010,6 +1010,10 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-danger: #ff4949;*/
+    //: #50bfff;
     /* Link
   -------------------------- */
     /* Border

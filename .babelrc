@@ -1,17 +1,35 @@
 {
-    "presets": [
-        ["env", { "modules": false }],
-        "stage-2"
+  "presets": [
+    [
+      "env",
+      {
+        "modules": false
+      }
     ],
-    "plugins": ["transform-runtime", ["component",[{
-        "libraryName": "element-ui",
-        "styleLibraryName": "theme-default"
-    }]]],
-    "comments": false,
-    "env": {
-        "test": {
-            "presets": ["env", "stage-2"],
-            "plugins": ["istanbul"]
+    "stage-2"
+  ],
+  "plugins": [
+    "transform-runtime",
+    [
+      "component",
+      [
+        {
+          "libraryName": "element-ui",
+          "styleLibraryName": "~theme"
         }
+      ]
+    ]
+  ],
+  "comments": false,
+  "env": {
+    "test": {
+      "presets": [
+        "env",
+        "stage-2"
+      ],
+      "plugins": [
+        "istanbul"
+      ]
     }
+  }
 }

@@ -116,12 +116,12 @@
 }
 
 .el-radio__input.is-focus .el-radio__inner{
-    border-color: #20a0ff;
+    border-color: #259cef;
 }
 
 .el-radio__input.is-checked .el-radio__inner{
-    border-color: #20a0ff;
-    background: #20a0ff
+    border-color: #259cef;
+    background: #259cef
 }
 
 .el-radio__input.is-checked .el-radio__inner::after{
@@ -171,7 +171,7 @@
 }
 
 .el-radio__inner:hover{
-    border-color: #20a0ff;
+    border-color: #259cef;
 }
 
 .el-radio__inner::after{
@@ -208,6 +208,10 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-danger: #ff4949;*/
+    //: #50bfff;
     /* Link
   -------------------------- */
     /* Border

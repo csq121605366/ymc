@@ -571,16 +571,16 @@ body {
 }
 
 a {
-  color: #20a0ff;
+  color: #259cef;
   text-decoration: none
 }
 
 a:hover, a:focus {
-  color: rgb(77, 179, 255);
+  color: rgb(81, 176, 242);
 }
 
 a:active {
-  color: rgb(29, 144, 230);
+  color: rgb(33, 140, 215);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -642,6 +642,10 @@ hr {
   -------------------------- */
   /* Colors
   -------------------------- */
+  /*--color-primary: #20a0ff;*/
+  /*--color-success: #13ce66;*/
+  /*--color-danger: #ff4949;*/
+  //: #50bfff;
   /* Link
   -------------------------- */
   /* Border

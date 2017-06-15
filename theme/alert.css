@@ -112,11 +112,11 @@
 }
 
 .el-alert--success{
-    background-color: #13ce66;
+    background-color: #03a914;
 }
 
 .el-alert--info{
-    background-color: #50bfff;
+    background-color: #44befe;
 }
 
 .el-alert--warning{
@@ -124,7 +124,7 @@
 }
 
 .el-alert--error{
-    background-color: #ff4949;
+    background-color: #ff0000;
 }
 
 .el-alert__content{
@@ -178,6 +178,10 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-danger: #ff4949;*/
+    //: #50bfff;
     /* Link
   -------------------------- */
     /* Border

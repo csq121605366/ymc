@@ -117,8 +117,8 @@
 }
 
 .el-switch.is-checked .el-switch__core{
-    border-color: #20a0ff;
-    background-color: #20a0ff;
+    border-color: #259cef;
+    background-color: #259cef;
 }
 
 .el-switch.is-disabled{}
@@ -204,6 +204,10 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-danger: #ff4949;*/
+    //: #50bfff
     /* Link
   -------------------------- */
     /* Border

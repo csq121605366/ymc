@@ -26,6 +26,7 @@ module.exports = {
     // 'semi':['error','always']
     'space-before-function-paren': 0,
     'no-multiple-empty-lines': 0,
-    'no-unused-vars': 0
+    'no-unused-vars': 0,
+    'semi': 0
   }
 }

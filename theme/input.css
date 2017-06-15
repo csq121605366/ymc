@@ -118,7 +118,7 @@
 
 .el-input.is-active .el-input__inner{
     outline: none;
-    border-color: #20a0ff;
+    border-color: #259cef;
 }
 
 .el-input__inner{
@@ -159,7 +159,7 @@
 
 .el-input__inner:focus{
     outline: none;
-    border-color: #20a0ff
+    border-color: #259cef
 }
 
 .el-input__icon{
@@ -343,13 +343,17 @@
 
 .el-textarea__inner:focus{
     outline: none;
-    border-color: #20a0ff
+    border-color: #259cef
 }
 :root{
     /* Transition
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-danger: #ff4949;*/
+    //: #50bfff
     /* Link
   -------------------------- */
     /* Border

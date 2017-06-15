@@ -1,0 +1,15 @@
+@mixin clearfix (){
+  *zoom: 1;
+  &:after{
+    display: table;
+  }
+  &:before,
+  &:after {
+    display: table;
+    line-height: 0;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}

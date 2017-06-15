@@ -116,8 +116,8 @@
 }
 
 .el-checkbox__input.is-indeterminate .el-checkbox__inner{
-    background-color: #20a0ff;
-    border-color: rgb(1, 144, 254)
+    background-color: #259cef;
+    border-color: rgb(1, 146, 249)
 }
 
 .el-checkbox__input.is-indeterminate .el-checkbox__inner::before{
@@ -136,12 +136,12 @@
 }
 
 .el-checkbox__input.is-focus .el-checkbox__inner{
-    border-color: #20a0ff;
+    border-color: #259cef;
 }
 
 .el-checkbox__input.is-checked .el-checkbox__inner{
-    background-color: #20a0ff;
-    border-color: rgb(1, 144, 254)
+    background-color: #259cef;
+    border-color: rgb(1, 146, 249)
 }
 
 .el-checkbox__input.is-checked .el-checkbox__inner::after{
@@ -201,7 +201,7 @@
 }
 
 .el-checkbox__inner:hover{
-    border-color: #20a0ff
+    border-color: #259cef
 }
 
 .el-checkbox__inner::after{
@@ -244,9 +244,9 @@
 
 .el-checkbox-button.is-checked .el-checkbox-button__inner{
     color: #fff;
-    background-color: #20a0ff;
-    border-color: #20a0ff;
-    box-shadow: -1px 0 0 0 #20a0ff
+    background-color: #259cef;
+    border-color: #259cef;
+    box-shadow: -1px 0 0 0 #259cef
 }
 
 .el-checkbox-button.is-disabled{}
@@ -263,7 +263,7 @@
 .el-checkbox-button.is-focus{}
 
 .el-checkbox-button.is-focus .el-checkbox-button__inner{
-    border-color: #20a0ff
+    border-color: #259cef
 }
 
 .el-checkbox-button:first-child .el-checkbox-button__inner{
@@ -297,13 +297,13 @@
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-    padding: 10px 15px;
+    padding: 11px 30px;
     font-size: 14px;
     border-radius: 0
 }
 
 .el-checkbox-button__inner:hover{
-    color: #20a0ff
+    color: #259cef
 }
 
 .el-checkbox-button__inner [class*="el-icon-"]{
@@ -326,7 +326,7 @@
 .el-checkbox-button--large{}
 
 .el-checkbox-button--large .el-checkbox-button__inner{
-    padding: 11px 19px;
+    padding: 15px 35px;
     font-size: 16px;
     border-radius: 0
 }
@@ -351,6 +351,10 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-danger: #ff4949;*/
+    //: #50bfff
     /* Link
   -------------------------- */
     /* Border

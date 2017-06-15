@@ -112,11 +112,11 @@
 
 .el-select-dropdown__item.selected{
     color: #fff;
-    background-color: #20a0ff
+    background-color: #259cef
 }
 
 .el-select-dropdown__item.selected.hover{
-    background-color: rgb(28, 141, 224)
+    background-color: rgb(33, 137, 210)
 }
 
 .el-select-dropdown__item span{
@@ -136,6 +136,10 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-danger: #ff4949;*/
+    //: #50bfff
     /* Link
   -------------------------- */
     /* Border

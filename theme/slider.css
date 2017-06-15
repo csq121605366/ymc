@@ -126,7 +126,7 @@
 }
 .el-input.is-active .el-input__inner{
     outline: none;
-    border-color: #20a0ff;
+    border-color: #259cef;
 }
 .el-input__inner{
     -webkit-appearance: none;
@@ -161,7 +161,7 @@
 }
 .el-input__inner:focus{
     outline: none;
-    border-color: #20a0ff;
+    border-color: #259cef;
 }
 .el-input__icon{
     position: absolute;
@@ -312,7 +312,7 @@
 }
 .el-textarea__inner:focus{
     outline: none;
-    border-color: #20a0ff;
+    border-color: #259cef;
 }
 :root{
     /* Transition
@@ -443,10 +443,10 @@
     z-index: 1;
 }
 .el-input-number__increase:hover, .el-input-number__decrease:hover{
-    color: #20a0ff;
+    color: #259cef;
 }
 .el-input-number__increase:hover:not(.is-disabled) ~ .el-input .el-input__inner:not(.is-disabled), .el-input-number__decrease:hover:not(.is-disabled) ~ .el-input .el-input__inner:not(.is-disabled){
-    border-color: #20a0ff;
+    border-color: #259cef;
 }
 .el-input-number__increase.is-disabled, .el-input-number__decrease.is-disabled{
     color: rgb(209, 219, 229);
@@ -858,7 +858,7 @@
 }
 
 .el-slider.is-vertical.el-slider--with-input .el-slider__input:active .el-input-number__decrease, .el-slider.is-vertical.el-slider--with-input .el-slider__input:active .el-input-number__increase{
-    border-color: #20a0ff;
+    border-color: #259cef;
 }
 
 .el-slider__runway{
@@ -916,7 +916,7 @@
 
 .el-slider__bar{
     height: 4px;
-    background-color: #20a0ff;
+    background-color: #259cef;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     position: absolute;
@@ -955,7 +955,7 @@
 .el-slider__button{
     width: 12px;
     height: 12px;
-    background-color: #20a0ff;
+    background-color: #259cef;
     border-radius: 50%;
     transition: .2s;
     -webkit-user-select: none;
@@ -966,7 +966,7 @@
 
 .el-slider__button:hover, .el-slider__button.hover, .el-slider__button.dragging{
     transform: scale(1.5);
-    background-color: rgb(28, 141, 224);
+    background-color: rgb(33, 137, 210);
 }
 
 .el-slider__button:hover, .el-slider__button.hover{
@@ -992,6 +992,10 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-danger: #ff4949;*/
+    //: #50bfff;
     /* Link
   -------------------------- */
     /* Border

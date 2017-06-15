@@ -104,15 +104,15 @@
 }
 
 .el-notification .el-icon-circle-check{
-    color: #13ce66;
+    color: #03a914;
 }
 
 .el-notification .el-icon-circle-cross{
-    color: #ff4949;
+    color: #ff0000;
 }
 
 .el-notification .el-icon-information{
-    color: #50bfff;
+    color: #44befe;
 }
 
 .el-notification .el-icon-warning{
@@ -177,6 +177,10 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-danger: #ff4949;*/
+    //: #50bfff;
     /* Link
   -------------------------- */
     /* Border

@@ -140,33 +140,33 @@
 }
 
 .el-tag--primary{
-    background-color: rgba(32, 160, 255, 0.1);
-    border-color: rgba(32, 160, 255, 0.2);
-    color: #20a0ff
+    background-color: rgba(37, 156, 239, 0.1);
+    border-color: rgba(37, 156, 239, 0.2);
+    color: #259cef
 }
 
 .el-tag--primary .el-tag__close:hover{
-    background-color: #20a0ff;
+    background-color: #259cef;
     color: #fff
 }
 
 .el-tag--primary.is-hit{
-    border-color: #20a0ff
+    border-color: #259cef
 }
 
 .el-tag--success{
     background-color: rgba(18,206,102,0.10);
     border-color: rgba(18,206,102,0.20);
-    color: #13ce66
+    color: #03a914
 }
 
 .el-tag--success .el-tag__close:hover{
-    background-color: #13ce66;
+    background-color: #03a914;
     color: #fff
 }
 
 .el-tag--success.is-hit{
-    border-color: #13ce66
+    border-color: #03a914
 }
 
 .el-tag--warning{
@@ -187,22 +187,26 @@
 .el-tag--danger{
     background-color: rgba(255,73,73,0.10);
     border-color: rgba(255,73,73,0.20);
-    color: #ff4949
+    color: #ff0000
 }
 
 .el-tag--danger .el-tag__close:hover{
-    background-color: #ff4949;
+    background-color: #ff0000;
     color: #fff
 }
 
 .el-tag--danger.is-hit{
-    border-color: #ff4949
+    border-color: #ff0000
 }
 :root{
     /* Transition
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-danger: #ff4949;*/
+    //: #50bfff
     /* Link
   -------------------------- */
     /* Border

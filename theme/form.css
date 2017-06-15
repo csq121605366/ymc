@@ -157,12 +157,12 @@
 }
 
 .el-form-item.is-error .el-input__inner, .el-form-item.is-error .el-textarea__inner{
-    border-color: #ff4949;
+    border-color: #ff0000;
 }
 
 .el-form-item.is-required .el-form-item__label:before{
     content: '*';
-    color: #ff4949;
+    color: #ff0000;
     margin-right: 4px;
 }
 
@@ -193,7 +193,7 @@
 }
 
 .el-form-item__error{
-    color: #ff4949;
+    color: #ff0000;
     font-size: 12px;
     line-height: 1;
     padding-top: 4px;
@@ -206,6 +206,10 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-danger: #ff4949;*/
+    //: #50bfff;
     /* Link
   -------------------------- */
     /* Border

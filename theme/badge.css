@@ -97,7 +97,7 @@
 }
 
 .el-badge__content{
-    background-color: #ff4949;
+    background-color: #ff0000;
     border-radius: 10px;
     color: #fff;
     display: inline-block;
@@ -133,6 +133,10 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-danger: #ff4949;*/
+    //: #50bfff
     /* Link
   -------------------------- */
     /* Border

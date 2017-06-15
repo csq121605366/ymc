@@ -412,16 +412,16 @@
 
 .el-color-dropdown__btn:hover {
 
-    color: #20a0ff;
+    color: #259cef;
 
-    border-color: #20a0ff;
+    border-color: #259cef;
 }
 
 .el-color-dropdown__link-btn {
 
     cursor: pointer;
 
-    color: #20a0ff;
+    color: #259cef;
 
     text-decoration: none;
 
@@ -432,7 +432,7 @@
 
 .el-color-dropdown__link-btn:hover {
 
-    color: rgb(77, 179, 255);
+    color: rgb(81, 176, 242);
 }
 
 .el-color-picker {
@@ -549,6 +549,14 @@
 
     /* Colors
   -------------------------- */
+
+    /*--color-primary: #20a0ff;*/
+
+    /*--color-success: #13ce66;*/
+
+    /*--color-danger: #ff4949;*/
+
+    //: #50bfff;
 
     /* Link
   -------------------------- */

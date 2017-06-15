@@ -207,7 +207,7 @@
 }
 
 .el-menu--horizontal > .el-menu-item:hover, .el-menu--horizontal > .el-submenu:hover .el-submenu__title, .el-menu--horizontal > .el-submenu.is-active .el-submenu__title{
-  border-bottom: 5px solid #20a0ff;
+  border-bottom: 5px solid #259cef;
 }
 
 .el-menu--horizontal.el-menu--dark{}
@@ -225,7 +225,7 @@
 }
 
 .el-menu--horizontal.el-menu--dark .el-submenu .el-menu-item.is-active{
-  color: #20a0ff;
+  color: #259cef;
 }
 
 .el-menu-item [class^="el-icon-"]{
@@ -246,7 +246,7 @@
 }
 
 .el-menu-item.is-active{
-  color: #20a0ff;
+  color: #259cef;
 }
 
 .el-submenu [class^="el-icon-"]{
@@ -273,7 +273,7 @@
 }
 
 .el-submenu.is-active .el-submenu__title{
-  border-bottom-color: #20a0ff;
+  border-bottom-color: #259cef;
 }
 
 .el-submenu__title{
@@ -309,6 +309,10 @@
   -------------------------- */
   /* Colors
   -------------------------- */
+  /*--color-primary: #20a0ff;*/
+  /*--color-success: #13ce66;*/
+  /*--color-danger: #ff4949;*/
+  //: #50bfff;
   /* Link
   -------------------------- */
   /* Border
