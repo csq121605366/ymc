@@ -107,11 +107,7 @@
     color: #ddd;
 }
 .el-date-table td.today {
-<<<<<<< HEAD
     color: #259cef;
-=======
-    color: #20a0ff;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
     position: relative;
 }
 .el-date-table td.today:before {
@@ -121,18 +117,13 @@
     right: 0px;
     width: 0;
     height: 0;
-<<<<<<< HEAD
     border-top: 0.5em solid #259cef;
-=======
-    border-top: 0.5em solid #20a0ff;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
     border-left: .5em solid transparent;
 }
 .el-date-table td.available:hover {
     background-color: rgb(228, 232, 241);
 }
 .el-date-table td.in-range {
-<<<<<<< HEAD
     background-color: rgb(211, 235, 252);
 }
 .el-date-table td.in-range:hover {
@@ -140,15 +131,6 @@
 }
 .el-date-table td.current:not(.disabled), .el-date-table td.start-date, .el-date-table td.end-date {
     background-color: #259cef !important;
-=======
-    background-color: rgb(210, 236, 255);
-}
-.el-date-table td.in-range:hover {
-    background-color: rgb(175, 221, 255);
-}
-.el-date-table td.current:not(.disabled), .el-date-table td.start-date, .el-date-table td.end-date {
-    background-color: #20a0ff !important;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
     color: #fff;
 }
 .el-date-table td.disabled {
@@ -171,11 +153,7 @@
     background-color: rgb(228, 232, 241);
 }
 .el-date-table.is-week-mode .el-date-table__row.current {
-<<<<<<< HEAD
     background-color: rgb(211, 235, 252);
-=======
-    background-color: rgb(210, 236, 255);
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 :root {
     /* Transition
@@ -293,11 +271,7 @@
     color: #ccc;
 }
 .el-month-table td.current:not(.disabled) .cell {
-<<<<<<< HEAD
     background-color: #259cef !important;
-=======
-    background-color: #20a0ff !important;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
     color: #fff;
 }
 :root {
@@ -419,11 +393,7 @@
     color: #ccc;
 }
 .el-year-table td.current:not(.disabled) .cell {
-<<<<<<< HEAD
     background-color: #259cef !important;
-=======
-    background-color: #20a0ff !important;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
     color: #fff;
 }
 :root {
@@ -1047,11 +1017,7 @@
 }
 .el-picker-panel__shortcut.active {
     background-color: #e6f1fe;
-<<<<<<< HEAD
     color: #259cef;
-=======
-    color: #20a0ff;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 .el-picker-panel__btn {
     border: 1px solid #dcdcdc;
@@ -1078,19 +1044,11 @@
     margin-top: 3px;
 }
 .el-picker-panel__icon-btn:hover {
-<<<<<<< HEAD
     color: #259cef;
 }
 .el-picker-panel__link-btn {
     cursor: pointer;
     color: #259cef;
-=======
-    color: #20a0ff;
-}
-.el-picker-panel__link-btn {
-    cursor: pointer;
-    color: #20a0ff;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
     text-decoration: none;
     padding: 15px;
     font-size: 12px;
@@ -1153,17 +1111,10 @@
     cursor: pointer;
 }
 .el-date-picker__header-label:hover {
-<<<<<<< HEAD
     color: #259cef;
 }
 .el-date-picker__header-label.active {
     color: #259cef;
-=======
-    color: #20a0ff;
-}
-.el-date-picker__header-label.active {
-    color: #20a0ff;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 .el-date-picker__prev-btn {
     float: left;
@@ -1589,11 +1540,7 @@
     font-size: 14px;
     margin-top: -15px;
     line-height: 16px;
-<<<<<<< HEAD
     background-color: #259cef;
-=======
-    background-color: #20a0ff;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
     height: 32px;
     z-index: -1;
     left: 0;
@@ -1638,11 +1585,7 @@
 }
 .el-time-panel__btn.confirm {
     font-weight: 800;
-<<<<<<< HEAD
     color: #259cef;
-=======
-    color: #20a0ff;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 @charset "UTF-8";
 :root {
@@ -1758,11 +1701,7 @@
 }
 .el-input.is-active .el-input__inner {
     outline: none;
-<<<<<<< HEAD
     border-color: #259cef;
-=======
-    border-color: #20a0ff;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 .el-input__inner {
     -webkit-appearance: none;
@@ -1797,11 +1736,7 @@
 }
 .el-input__inner:focus {
     outline: none;
-<<<<<<< HEAD
     border-color: #259cef;
-=======
-    border-color: #20a0ff;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 .el-input__icon {
     position: absolute;
@@ -1952,11 +1887,7 @@
 }
 .el-textarea__inner:focus {
     outline: none;
-<<<<<<< HEAD
     border-color: #259cef;
-=======
-    border-color: #20a0ff;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 @charset "UTF-8";
 :root {
@@ -2105,13 +2036,10 @@
   -------------------------- */
     /* Colors
   -------------------------- */
-<<<<<<< HEAD
     /*--color-primary: #20a0ff;*/
     /*--color-success: #13ce66;*/
     /*--color-danger: #ff4949;*/
-    /*--color-base-black: color(var(--color-primary) h(+6) s(33%) l(18%));*/
-=======
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
+    //: #50bfff;
     /* Link
   -------------------------- */
     /* Border

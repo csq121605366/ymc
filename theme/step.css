@@ -174,7 +174,6 @@
 }
 
 .el-step__head.is-finish{
-<<<<<<< HEAD
     color: #259cef;
     border-color: #259cef;
 }
@@ -187,20 +186,6 @@
 .el-step__head.is-success{
     color: #03a914;
     border-color: #03a914;
-=======
-    color: #20a0ff;
-    border-color: #20a0ff;
-}
-
-.el-step__head.is-error{
-    color: #ff4949;
-    border-color: #ff4949;
-}
-
-.el-step__head.is-success{
-    color: #13ce66;
-    border-color: #13ce66;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 
 .el-step__head.is-wait{
@@ -221,35 +206,20 @@
 
 .el-step__head.is-text.is-finish{
     color: #fff;
-<<<<<<< HEAD
     background-color: #259cef;
     border-color: #259cef;
-=======
-    background-color: #20a0ff;
-    border-color: #20a0ff;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 
 .el-step__head.is-text.is-error{
     color: #fff;
-<<<<<<< HEAD
     background-color: #ff0000;
     border-color: #ff0000;
-=======
-    background-color: #ff4949;
-    border-color: #ff4949;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 
 .el-step__head.is-text.is-success{
     color: #fff;
-<<<<<<< HEAD
     background-color: #03a914;
     border-color: #03a914;
-=======
-    background-color: #13ce66;
-    border-color: #13ce66;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 
 .el-step__head.is-text.is-wait{
@@ -278,29 +248,17 @@
 
 .el-step__title.is-finish{
     font-weight: 700;
-<<<<<<< HEAD
     color: #259cef;
-=======
-    color: #20a0ff;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 
 .el-step__title.is-error{
     font-weight: 700;
-<<<<<<< HEAD
     color: #ff0000;
-=======
-    color: #ff4949;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 
 .el-step__title.is-success{
     font-weight: 700;
-<<<<<<< HEAD
     color: #03a914;
-=======
-    color: #13ce66;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 
 .el-step__title.is-wait{
@@ -320,7 +278,6 @@
 }
 
 .el-step__description.is-finish{
-<<<<<<< HEAD
     color: #259cef;
 }
 
@@ -330,17 +287,6 @@
 
 .el-step__description.is-success{
     color: #03a914;
-=======
-    color: #20a0ff;
-}
-
-.el-step__description.is-error{
-    color: #ff4949;
-}
-
-.el-step__description.is-success{
-    color: #13ce66;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 
 .el-step__description.is-wait{
@@ -355,13 +301,10 @@
   -------------------------- */
     /* Colors
   -------------------------- */
-<<<<<<< HEAD
     /*--color-primary: #20a0ff;*/
     /*--color-success: #13ce66;*/
     /*--color-danger: #ff4949;*/
-    /*--color-base-black: color(var(--color-primary) h(+6) s(33%) l(18%));*/
-=======
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
+    //: #50bfff;
     /* Link
   -------------------------- */
     /* Border

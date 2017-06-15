@@ -6,10 +6,12 @@ import Router from 'vue-router'
 // import seller from '../components/seller/seller'
 // import ratings from '../components/ratings/ratings'
 
+// 页面路由
 // 单项懒加载
-const home = r => require(['../components/home/home'], r)
-const about = r => require(['../components/about/about'], r)
-// const ratings = r => require(['../components/ratings/ratings'], r)
+const home = r => require(['../pages/home'], r)
+const aboutUs = r => require(['../pages/aboutUs'], r)
+// 用户登录登录
+const loginUser = r => require(['../pages/login'], r)
 
 // 分组懒加载
 // const goods = r => require.ensure([], () => r(require('../components/goods/goods')), 'body')
@@ -31,7 +33,8 @@ export default new Router({
   routes: [
     {path: '/', redirect: '/home'},
     {path: '/home', component: home},
-    {path: '/aboutUs', component: about},
+    {path: '/aboutUs', component: aboutUs},
+    {path: '/login/user', component: loginUser},
     {path: '*', redirect: '/'}
   ]
 })

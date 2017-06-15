@@ -123,21 +123,13 @@
     position: relative;
     cursor: pointer;
     transition: all .3s cubic-bezier(.645,.045,.355,1);
-<<<<<<< HEAD
     padding: 11px 30px;
-=======
-    padding: 10px 15px;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
     font-size: 14px;
     border-radius: 0
 }
 
 .el-radio-button__inner:hover{
-<<<<<<< HEAD
     color: #259cef
-=======
-    color: #20a0ff
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 
 .el-radio-button__inner [class*="el-icon-"]{
@@ -160,15 +152,9 @@
 
 .el-radio-button__orig-radio:checked + .el-radio-button__inner{
     color: #fff;
-<<<<<<< HEAD
     background-color: #259cef;
     border-color: #259cef;
     box-shadow: -1px 0 0 0 #259cef
-=======
-    background-color: #20a0ff;
-    border-color: #20a0ff;
-    box-shadow: -1px 0 0 0 #20a0ff
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 
 .el-radio-button__orig-radio:disabled{}
@@ -185,11 +171,7 @@
 .el-radio-button--large{}
 
 .el-radio-button--large .el-radio-button__inner{
-<<<<<<< HEAD
     padding: 15px 35px;
-=======
-    padding: 11px 19px;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
     font-size: 16px;
     border-radius: 0
 }
@@ -214,13 +196,10 @@
   -------------------------- */
     /* Colors
   -------------------------- */
-<<<<<<< HEAD
     /*--color-primary: #20a0ff;*/
     /*--color-success: #13ce66;*/
     /*--color-danger: #ff4949;*/
-    /*--color-base-black: color(var(--color-primary) h(+6) s(33%) l(18%));*/
-=======
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
+    //: #50bfff
     /* Link
   -------------------------- */
     /* Border

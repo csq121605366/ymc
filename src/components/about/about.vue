@@ -1,18 +1,18 @@
 <template>
-  <section class="c-about__wrap">
+  <section v-if="initdata" class="c-about__wrap">
     <div class="c-about">
       <div class="c-about__banner tf-0">
         <img v-if="initdata.banner" :src="initdata.banner" width="100%" height="330">
       </div>
       <!--公司简介-->
-      <section v-if="initdata.company" class="c-about__company l-about">
+      <section v-if="initdata.company.status" class="c-about__company l-about">
         <div class="l-wrap">
           <h2 class="l-about__tit">{{initdata.company.title}}</h2>
           <p class="l-about__txt">{{initdata.company.subTitle}}</p>
           <p class="l-about__row">{{initdata.company.context}}</p>
         </div>
       </section>
-      <section v-if="initdata.product" class="c-about__product l-about">
+      <section v-if="initdata.product.status" class="c-about__product l-about">
         <div class="l-wrap">
           <h2 class="l-about__tit">{{initdata.product.title}}</h2>
           <p class="l-about__txt">{{initdata.product.subTitle}}</p>
@@ -20,16 +20,27 @@
         </div>
       </section>
       <!--就诊疗程-->
-      <section v-if="initdata.process" class="c-about__process l-about">
+      <section v-if="initdata.process.status" class="c-about__process l-about">
         <div class="l-wrap">
           <h2 class="l-about__tit">{{initdata.process.title}}</h2>
           <p class="l-about__txt">{{initdata.process.subTitle}}</p>
           <div class="c-about__line">
-            <el-row v-for="(item, $index) in initdata.process.context" :key="$index" type="flex" justify="space-between" align="middle">
-              <el-col :span="12">
+            <el-row v-for="(item , $index) in initdata.process.context" :key="$index" type="flex"
+                    justify="space-between"
+                    align="middle">
+              <!--奇数行-->
+              <el-col v-if="(($index+1)%2)" :span="12">
                 <img :src="item.images">
               </el-col>
-              <el-col :span="12">
+              <el-col v-else :span="12">
+                <h3 class="c-about__line__tit">{{$index}}、{{item.title}}</h3>
+                <p class="c-about__line__txt">{{item.text}}</p>
+              </el-col>
+              <!--奇数行-->
+              <el-col v-if="!(($index+1)%2)" :span="12">
+                <img :src="item.images">
+              </el-col>
+              <el-col v-else :span="12">
                 <h3 class="c-about__line__tit">{{$index}}、{{item.title}}</h3>
                 <p class="c-about__line__txt">{{item.text}}</p>
               </el-col>
@@ -39,16 +50,7 @@
       </section>
 
       <!--品质保障-->
-      <section v-if="initdata.product" class="c-about__product l-about">
-        <div class="l-wrap">
-          <h2 class="l-about__tit">品质保障</h2>
-          <p class="l-about__txt">Brand protection</p>
-          <p class="l-about__row">
-            NuBrace为双层设计，外硬层使牙齿能有更大的空间进行移位；柔软的内层设计让佩戴者更加的舒适，卫生，对牙龈无刺激。内部软衬对人最宝贵的东西是生命，生命属于人只有一次，一个人的生命是应该人最宝贵的东西是生命，生命属于人只有一次，一个人的生命是应该这样度过的：  当他回首往事的时候，他不会因虚度年华而悔恨，也不会人最宝贵的东西是生命，生命属于人只有一次，一个人的生命是应该这样度过的：  当他回首往事的时候，他不会因虚度年华而悔恨，也不会人最宝贵的东西是生命，生命属于人只有一次，一个人的生命是应该这样度过的：  当他回首往事的时候，他不会因虚度年华而悔恨，也不会这样度过的：  当他回首往事的时候，他不会因虚度年华而悔恨，也不会
-            人最宝贵的东西是生命，生命属于人只有一次，一个人的生命是应该这样度过的：  当他回首往事的时候，他不会因虚度年华而悔恨，也不会
-          </p>
-        </div>
-      </section>
+
     </div>
   </section>
 </template>
@@ -57,10 +59,11 @@
   //  获取数据
   import api from '../../service/getData'
   import { mapState } from 'vuex'
+
   export default{
     data() {
       return {
-        initdata: {}
+        initdata: 0
       }
     },
     computed: {
@@ -69,13 +72,15 @@
       ])
     },
     created() {
-      api.apiAboutUs().then(({data}) => {
-        let res = data
-        if (res.status === this.STATUS) {
-          console.log(res.data.content)
-          this.initdata = res.data.content
-        }
-      })
+      console.log(this)
+      if (!this.initdata) {
+        api.apiAboutUs().then(({data}) => {
+          let res = data
+          if (res.status === this.STATUS) {
+            this.initdata = res.content
+          }
+        })
+      }
     }
   }
 </script>
@@ -112,7 +117,6 @@
       text-align: center;
       color: #666;
     }
-
   }
 
   .c-about {

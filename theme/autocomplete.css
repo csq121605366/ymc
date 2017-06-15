@@ -113,11 +113,7 @@
 }
 .el-input.is-active .el-input__inner{
     outline: none;
-<<<<<<< HEAD
     border-color: #259cef;
-=======
-    border-color: #20a0ff;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 .el-input__inner{
     -webkit-appearance: none;
@@ -152,11 +148,7 @@
 }
 .el-input__inner:focus{
     outline: none;
-<<<<<<< HEAD
     border-color: #259cef;
-=======
-    border-color: #20a0ff;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 .el-input__icon{
     position: absolute;
@@ -307,11 +299,7 @@
 }
 .el-textarea__inner:focus{
     outline: none;
-<<<<<<< HEAD
     border-color: #259cef;
-=======
-    border-color: #20a0ff;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 :root{
     /* Transition
@@ -575,20 +563,12 @@
 }
 
 .el-autocomplete-suggestion li.highlighted{
-<<<<<<< HEAD
     background-color: #259cef;
-=======
-    background-color: #20a0ff;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
     color: #fff;
 }
 
 .el-autocomplete-suggestion li:active{
-<<<<<<< HEAD
     background-color: rgb(15, 125, 204);
-=======
-    background-color: rgb(0, 130, 230);
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 
 .el-autocomplete-suggestion li.divider{
@@ -642,13 +622,10 @@
   -------------------------- */
     /* Colors
   -------------------------- */
-<<<<<<< HEAD
     /*--color-primary: #20a0ff;*/
     /*--color-success: #13ce66;*/
     /*--color-danger: #ff4949;*/
-    /*--color-base-black: color(var(--color-primary) h(+6) s(33%) l(18%));*/
-=======
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
+    //: #50bfff;
     /* Link
   -------------------------- */
     /* Border

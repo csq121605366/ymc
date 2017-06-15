@@ -140,7 +140,6 @@
 }
 
 .el-tag--primary{
-<<<<<<< HEAD
     background-color: rgba(37, 156, 239, 0.1);
     border-color: rgba(37, 156, 239, 0.2);
     color: #259cef
@@ -148,51 +147,26 @@
 
 .el-tag--primary .el-tag__close:hover{
     background-color: #259cef;
-=======
-    background-color: rgba(32, 160, 255, 0.1);
-    border-color: rgba(32, 160, 255, 0.2);
-    color: #20a0ff
-}
-
-.el-tag--primary .el-tag__close:hover{
-    background-color: #20a0ff;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
     color: #fff
 }
 
 .el-tag--primary.is-hit{
-<<<<<<< HEAD
     border-color: #259cef
-=======
-    border-color: #20a0ff
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 
 .el-tag--success{
     background-color: rgba(18,206,102,0.10);
     border-color: rgba(18,206,102,0.20);
-<<<<<<< HEAD
     color: #03a914
 }
 
 .el-tag--success .el-tag__close:hover{
     background-color: #03a914;
-=======
-    color: #13ce66
-}
-
-.el-tag--success .el-tag__close:hover{
-    background-color: #13ce66;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
     color: #fff
 }
 
 .el-tag--success.is-hit{
-<<<<<<< HEAD
     border-color: #03a914
-=======
-    border-color: #13ce66
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 
 .el-tag--warning{
@@ -213,41 +187,26 @@
 .el-tag--danger{
     background-color: rgba(255,73,73,0.10);
     border-color: rgba(255,73,73,0.20);
-<<<<<<< HEAD
     color: #ff0000
 }
 
 .el-tag--danger .el-tag__close:hover{
     background-color: #ff0000;
-=======
-    color: #ff4949
-}
-
-.el-tag--danger .el-tag__close:hover{
-    background-color: #ff4949;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
     color: #fff
 }
 
 .el-tag--danger.is-hit{
-<<<<<<< HEAD
     border-color: #ff0000
-=======
-    border-color: #ff4949
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 :root{
     /* Transition
   -------------------------- */
     /* Colors
   -------------------------- */
-<<<<<<< HEAD
     /*--color-primary: #20a0ff;*/
     /*--color-success: #13ce66;*/
     /*--color-danger: #ff4949;*/
-    /*--color-base-black: color(var(--color-primary) h(+6) s(33%) l(18%));*/
-=======
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
+    //: #50bfff
     /* Link
   -------------------------- */
     /* Border

@@ -571,28 +571,16 @@ body {
 }
 
 a {
-<<<<<<< HEAD
   color: #259cef;
-=======
-  color: #20a0ff;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
   text-decoration: none
 }
 
 a:hover, a:focus {
-<<<<<<< HEAD
   color: rgb(81, 176, 242);
 }
 
 a:active {
   color: rgb(33, 140, 215);
-=======
-  color: rgb(77, 179, 255);
-}
-
-a:active {
-  color: rgb(29, 144, 230);
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -654,13 +642,10 @@ hr {
   -------------------------- */
   /* Colors
   -------------------------- */
-<<<<<<< HEAD
   /*--color-primary: #20a0ff;*/
   /*--color-success: #13ce66;*/
   /*--color-danger: #ff4949;*/
-  /*--color-base-black: color(var(--color-primary) h(+6) s(33%) l(18%));*/
-=======
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
+  //: #50bfff;
   /* Link
   -------------------------- */
   /* Border

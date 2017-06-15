@@ -339,21 +339,14 @@
   -------------------------- */
   --button-font-size: 14px;
   --button-border-radius: var(--border-radius-base);
-<<<<<<< HEAD
+
   --button-padding-vertical: 11px;
   --button-padding-horizontal: 30px;
 
   --button-large-font-size: 16px;
   --button-large-padding-vertical: 15px;
   --button-large-padding-horizontal: 35px;
-=======
-  --button-padding-vertical: 10px;
-  --button-padding-horizontal: 15px;
 
-  --button-large-font-size: 16px;
-  --button-large-padding-vertical: 11px;
-  --button-large-padding-horizontal: 19px;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 
   --button-small-font-size: 12px;
   --button-small-padding-vertical: 7px;

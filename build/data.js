@@ -5,59 +5,64 @@ const imgColor = '#259cef'
 const imgText = 'nubrace'
 exports.aboutUs = Mock.mock({
   'page': 'aboutUs',
+  'status': 1,
   'content': {
     'banner': Random.image('1930x330', imgColor, imgText),
     'company': {
+      'status': 1,
       'title': '@ctitle',
       'subTitle': '@word',
-      'context': '@cparagraph'
+      'content': '@cparagraph'
     },
     'product': {
+      'status': 1,
       'title': '@ctitle',
       'subTitle': '@word',
-      'context': '@cparagraph'
+      'content': '@cparagraph'
     },
     'process': {
+      'status': 1,
       'title': '@ctitle',
       'subTitle': '@word',
-      'context|4': [{
+      'content|4': [{
         'images': Random.image('450x250', imgColor, imgText),
         'title': '@ctitle',
         'text': '@cparagraph'
       }]
     },
     'brand': {
+      'status': 1,
       'title': '@ctitle',
       'subTitle': '@word',
-      'context|8': [
+      'content|8': [
         Random.image('285x220', imgColor, imgText)
       ]
     },
     'team': {
+      'status': 1,
       'title': '@ctitle',
       'subTitle': '@word',
-      'context': {
-        'array|4': {
-          'name': '@cname',
-          'enName': '@name',
-          'title': {
-            'array|1-4': ['@province']
-          },
-          'speciality': {
-            'title': '@ctitle',
-            'text': '@csentence(6,15)'
-          },
-          'introduce': {
-            'title': '@ctitle',
-            'text': '@cparagraph'
-          }
+      'content|4': [{
+        'name': '@cname',
+        'enName': '@name',
+        'sImage' : Random.image('100x100', imgColor, imgText),
+        'bImage' : Random.image('300x300', imgColor, imgText),
+        'title|1-4': ['@province'],
+        'speciality': {
+          'title': '@ctitle',
+          'text': '@csentence(6,15)'
+        },
+        'introduce': {
+          'title': '@ctitle',
+          'text': '@cparagraph'
         }
-      }
+      }]
     },
     'about': {
+      'status': 1,
       'title': '@ctitle',
       'subTitle': '@word',
-      'context': {
+      'content': {
         'name': '@csentence(5,10)',
         'site': {
           'title': '公司地址',

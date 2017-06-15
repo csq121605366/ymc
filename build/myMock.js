@@ -16,10 +16,7 @@ const apiRouter = express.Router()
 
 
 apiRouter.all('/aboutUs', function (req, res) {
-  res.json({
-    status: 0,
-    data: appData.aboutUs
-  })
+  res.json(appData.aboutUs)
 })
 
 module.exports.apiRouter = apiRouter

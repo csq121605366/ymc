@@ -186,24 +186,17 @@
 }
 
 .el-tree--highlight-current .el-tree-node.is-current > .el-tree-node__content {
-<<<<<<< HEAD
   background-color: rgb(238, 247, 254);
-=======
-  background-color: rgb(237, 247, 255);
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 :root{
   /* Transition
   -------------------------- */
   /* Colors
   -------------------------- */
-<<<<<<< HEAD
   /*--color-primary: #20a0ff;*/
   /*--color-success: #13ce66;*/
   /*--color-danger: #ff4949;*/
-  /*--color-base-black: color(var(--color-primary) h(+6) s(33%) l(18%));*/
-=======
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
+  //: #50bfff;
   /* Link
   -------------------------- */
   /* Border

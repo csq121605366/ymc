@@ -56,8 +56,6 @@
 </template>
 
 <script type="text/javascript">
-  import ElCol from 'element-ui/packages/col/src/col'
-  import ElRow from 'element-ui/packages/row/src/row'
 
   export default{
     data () {
@@ -77,7 +75,7 @@
     },
     created() {
     },
-    components: {ElRow, ElCol}
+    components: {}
   }
 </script>
 

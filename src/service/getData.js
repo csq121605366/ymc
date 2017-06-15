@@ -35,7 +35,7 @@ instance.interceptors.response.use((response) => {
 
 export default {
   // 头部获取数据
-  apiAboutUs(data) {
+  getAboutUs(data) {
     return instance.get('/api/aboutUs', data)
   }
 }

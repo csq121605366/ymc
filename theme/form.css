@@ -157,20 +157,12 @@
 }
 
 .el-form-item.is-error .el-input__inner, .el-form-item.is-error .el-textarea__inner{
-<<<<<<< HEAD
     border-color: #ff0000;
-=======
-    border-color: #ff4949;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 
 .el-form-item.is-required .el-form-item__label:before{
     content: '*';
-<<<<<<< HEAD
     color: #ff0000;
-=======
-    color: #ff4949;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
     margin-right: 4px;
 }
 
@@ -201,11 +193,7 @@
 }
 
 .el-form-item__error{
-<<<<<<< HEAD
     color: #ff0000;
-=======
-    color: #ff4949;
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
     font-size: 12px;
     line-height: 1;
     padding-top: 4px;
@@ -218,13 +206,10 @@
   -------------------------- */
     /* Colors
   -------------------------- */
-<<<<<<< HEAD
     /*--color-primary: #20a0ff;*/
     /*--color-success: #13ce66;*/
     /*--color-danger: #ff4949;*/
-    /*--color-base-black: color(var(--color-primary) h(+6) s(33%) l(18%));*/
-=======
->>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
+    //: #50bfff;
     /* Link
   -------------------------- */
     /* Border
