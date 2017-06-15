@@ -1,5 +1,9 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+
+import { Button, Select } from 'element-ui'
+import '../theme/index.css'
+
 import Vue from 'vue'
 
 import '../theme/index.css'
@@ -36,6 +40,7 @@ Vue.use(Icon)
 Vue.use(Input)
 Vue.prototype.$message = Message
 
+
 // eslint单行验证
 /* eslint-disable no-new */
 
@@ -45,5 +50,4 @@ new Vue({
   store,
   render: h => h(App)
 })
-
 

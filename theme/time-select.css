@@ -483,7 +483,11 @@
 }
 .el-picker-panel__shortcut.active {
   background-color: #e6f1fe;
+<<<<<<< HEAD
   color: #259cef;
+=======
+  color: #20a0ff;
+>>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 .el-picker-panel__btn {
   border: 1px solid #dcdcdc;
@@ -510,11 +514,19 @@
   margin-top: 3px;
 }
 .el-picker-panel__icon-btn:hover {
+<<<<<<< HEAD
   color: #259cef;
 }
 .el-picker-panel__link-btn {
   cursor: pointer;
   color: #259cef;
+=======
+  color: #20a0ff;
+}
+.el-picker-panel__link-btn {
+  cursor: pointer;
+  color: #20a0ff;
+>>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
   text-decoration: none;
   padding: 15px;
   font-size: 12px;
@@ -577,10 +589,17 @@
   cursor: pointer;
 }
 .el-date-picker__header-label:hover {
+<<<<<<< HEAD
   color: #259cef;
 }
 .el-date-picker__header-label.active {
   color: #259cef;
+=======
+  color: #20a0ff;
+}
+.el-date-picker__header-label.active {
+  color: #20a0ff;
+>>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 .el-date-picker__prev-btn {
   float: left;
@@ -848,12 +867,20 @@
 }
 
 .time-select-item.selected:not(.disabled) {
+<<<<<<< HEAD
   background-color: #259cef;
+=======
+  background-color: #20a0ff;
+>>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
   color: #fff
 }
 
 .time-select-item.selected:not(.disabled):hover {
+<<<<<<< HEAD
   background-color: #259cef;
+=======
+  background-color: #20a0ff;
+>>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 
 .time-select-item.disabled {
@@ -870,10 +897,13 @@
   -------------------------- */
   /* Colors
   -------------------------- */
+<<<<<<< HEAD
   /*--color-primary: #20a0ff;*/
   /*--color-success: #13ce66;*/
   /*--color-danger: #ff4949;*/
   /*--color-base-black: color(var(--color-primary) h(+6) s(33%) l(18%));*/
+=======
+>>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
   /* Link
   -------------------------- */
   /* Border

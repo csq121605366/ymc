@@ -112,11 +112,19 @@
 }
 
 .el-alert--success{
+<<<<<<< HEAD
     background-color: #03a914;
 }
 
 .el-alert--info{
     background-color: #44befe;
+=======
+    background-color: #13ce66;
+}
+
+.el-alert--info{
+    background-color: #50bfff;
+>>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 
 .el-alert--warning{
@@ -124,7 +132,11 @@
 }
 
 .el-alert--error{
+<<<<<<< HEAD
     background-color: #ff0000;
+=======
+    background-color: #ff4949;
+>>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 
 .el-alert__content{
@@ -178,10 +190,13 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+<<<<<<< HEAD
     /*--color-primary: #20a0ff;*/
     /*--color-success: #13ce66;*/
     /*--color-danger: #ff4949;*/
     /*--color-base-black: color(var(--color-primary) h(+6) s(33%) l(18%));*/
+=======
+>>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
     /* Link
   -------------------------- */
     /* Border

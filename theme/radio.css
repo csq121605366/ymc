@@ -116,12 +116,21 @@
 }
 
 .el-radio__input.is-focus .el-radio__inner{
+<<<<<<< HEAD
     border-color: #259cef;
 }
 
 .el-radio__input.is-checked .el-radio__inner{
     border-color: #259cef;
     background: #259cef
+=======
+    border-color: #20a0ff;
+}
+
+.el-radio__input.is-checked .el-radio__inner{
+    border-color: #20a0ff;
+    background: #20a0ff
+>>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 
 .el-radio__input.is-checked .el-radio__inner::after{
@@ -171,7 +180,11 @@
 }
 
 .el-radio__inner:hover{
+<<<<<<< HEAD
     border-color: #259cef;
+=======
+    border-color: #20a0ff;
+>>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 
 .el-radio__inner::after{
@@ -208,10 +221,13 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+<<<<<<< HEAD
     /*--color-primary: #20a0ff;*/
     /*--color-success: #13ce66;*/
     /*--color-danger: #ff4949;*/
     /*--color-base-black: color(var(--color-primary) h(+6) s(33%) l(18%));*/
+=======
+>>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
     /* Link
   -------------------------- */
     /* Border

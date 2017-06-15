@@ -10,53 +10,49 @@
           <ul class="c-header__fun">
             <li class="li">
               <el-input
-                placeholder="搜索..."
-                icon="search"
-                v-model="headerSearchText"
-                class="c-header__fun__search"
-                :on-icon-click="headerSearchBtn"
+              placeholder="搜索..."
+              icon="search"
+              v-model="headerSearchText"
+              class="c-header__fun__search"
+              :on-icon-click="headerSearchBtn"
               >
-              </el-input>
-            </li>
-            <li class="li">
-              <i class="iconfont icon-zhanghao"></i>
-              <router-link class="c-header__tp__link" to="/login/user">用户登录</router-link>
-            </li>
-            <li class="li">
-              <i class="iconfont icon-yisheng"></i>
-              <router-link class="c-header__tp__link" to="/login/doctor">医生登录</router-link>
-            </li>
-          </ul>
-        </el-col>
-      </el-row>
-    </div>
-    <el-row type="flex" justify="space-around" align="middle" class="c-header__cnt l-wrap">
-      <el-col :span="6" class="logo">
-        <img src="./logo.png" width="289" height="50" alt="">
-      </el-col>
-      <el-col tag="ul" :span="12" class="c-header__link">
-        <li class="c-header__link__li">
-          <router-link to="/home">首页</router-link>
-        </li>
-        <li class="c-header__link__li">
-          <router-link to="/case">客户案例</router-link>
-        </li>
-        <li class="c-header__link__li">
-          <router-link to="/technology">医学技术</router-link>
-        </li>
-        <li class="c-header__link__li">
-          <router-link to="/community">用户社区</router-link>
-        </li>
-        <li class="c-header__link__li">
-          <router-link to="/aboutUs">关于我们</router-link>
-        </li>
+            </el-input>
+          </li>
+          <li class="li">
+            <i class="iconfont icon-zhanghao"></i>
+            <router-link class="c-header__tp__link" to="/login/user">用户登录</router-link>
+          </li>
+          <li class="li">
+            <i class="iconfont icon-yisheng"></i>
+            <router-link class="c-header__tp__link" to="/login/doctor">医生登录</router-link>
+          </li>
+        </ul>
       </el-col>
     </el-row>
-
-
-  </section>
-
-
+  </div>
+  <el-row type="flex" justify="space-around" align="middle" class="c-header__cnt l-wrap">
+    <el-col :span="6" class="logo">
+      <img src="./logo.png" width="289" height="50" alt="">
+    </el-col>
+    <el-col tag="ul" :span="12" class="c-header__link">
+      <li class="c-header__link__li">
+        <router-link to="/home">首页</router-link>
+      </li>
+      <li class="c-header__link__li">
+        <router-link to="/case">客户案例</router-link>
+      </li>
+      <li class="c-header__link__li">
+        <router-link to="/technology">医学技术</router-link>
+      </li>
+      <li class="c-header__link__li">
+        <router-link to="/community">用户社区</router-link>
+      </li>
+      <li class="c-header__link__li">
+        <router-link to="/aboutUs">关于我们</router-link>
+      </li>
+    </el-col>
+  </el-row>
+</section>
 </template>
 
 <script type="text/javascript">

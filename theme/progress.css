@@ -101,6 +101,7 @@
 }
 
 .el-progress.is-exception .el-progress-bar__inner{
+<<<<<<< HEAD
   background-color:#ff0000;
 }
 
@@ -114,6 +115,21 @@
 
 .el-progress.is-success .el-progress__text{
   color:#03a914;
+=======
+  background-color:#ff4949;
+}
+
+.el-progress.is-exception .el-progress__text{
+  color:#ff4949;
+}
+
+.el-progress.is-success .el-progress-bar__inner{
+  background-color:#13ce66;
+}
+
+.el-progress.is-success .el-progress__text{
+  color:#13ce66;
+>>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
 }
 
 .el-progress__text{
@@ -188,7 +204,11 @@
   top: 0;
   height: 100%;
   border-radius: 2px 0 0 2px;
+<<<<<<< HEAD
   background-color:#259cef;
+=======
+  background-color:#20a0ff;
+>>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
   text-align: right;
   border-radius: 100px;
   line-height: 1;
@@ -215,10 +235,13 @@
   -------------------------- */
   /* Colors
   -------------------------- */
+<<<<<<< HEAD
   /*--color-primary: #20a0ff;*/
   /*--color-success: #13ce66;*/
   /*--color-danger: #ff4949;*/
   /*--color-base-black: color(var(--color-primary) h(+6) s(33%) l(18%));*/
+=======
+>>>>>>> 3d0f8f4ca64a91a2ffc1a158893d5bd24db5da06
   /* Link
   -------------------------- */
   /* Border
