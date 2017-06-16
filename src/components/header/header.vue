@@ -20,11 +20,11 @@
           </li>
           <li class="li">
             <i class="iconfont icon-zhanghao"></i>
-            <router-link class="c-header__tp__link" to="/login/user">用户登录</router-link>
+            <router-link class="c-header__tp__link" to="/nubrace/general">用户登录</router-link>
           </li>
           <li class="li">
             <i class="iconfont icon-yisheng"></i>
-            <router-link class="c-header__tp__link" to="/login/doctor">医生登录</router-link>
+            <router-link class="c-header__tp__link" to="/nubrace/doctor">医生登录</router-link>
           </li>
         </ul>
       </el-col>
@@ -32,7 +32,7 @@
   </div>
   <el-row type="flex" justify="space-around" align="middle" class="c-header__cnt l-wrap">
     <el-col :span="6" class="logo">
-      <img src="./logo.png" width="289" height="50" alt="">
+      <img src="../../assets/images/logo.png" width="289" height="50" alt="">
     </el-col>
     <el-col tag="ul" :span="12" class="c-header__link">
       <li class="c-header__link__li">

@@ -25,9 +25,6 @@
 
 <style>
   @import "../assets/scss/mixin.scss";
-  html,body{
-    height:100%;
-  }
   .app{
     display: flex;
     flex-flow:column;

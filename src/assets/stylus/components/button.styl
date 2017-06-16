@@ -1,0 +1,179 @@
+@keyframes MoreLoadingAnimation{
+  0% {
+    transform rotate(0deg)
+  }
+  to{
+    transform rotate(360deg)
+  }
+}
+
+.btn
+  border $button-border
+  border-radius $button-border-radius
+  background $button-background
+  color $button-color
+  display inline-flex
+  justify-content center
+  align-items center
+  font-size $button-font-size
+  font-weight $button-font-weight
+  min-height $button-min-height
+  line-height $button-min-height
+  outline 0
+  padding $button-padding-top $button-padding-left
+  position relative
+  text-decoration none
+  text-transform $button-text-transform
+  transition $button-transition
+  
+  &:focus
+    outline none
+    
+  &::-moz-focus-inner
+    border 0
+    
+  &:disabled
+    opacity $button-disabled-opacity
+    
+  for color_name, color_value in $theme
+    &.{color_name}
+      color #fff
+      
+      &.btn-outline
+        color color_value
+        
+      &.btn-flat
+        color color_value
+        
+        .ripple-animation
+          background color_value
+    
+  &-block
+    display flex
+    width 100%
+    
+  &-flat
+    background-color transparent !important
+    border-color transparent
+    box-shadow none
+    color currentColor
+    
+    &:hover:not(:disabled)
+      background-color $button-flat-hover !important
+      box-shadow none
+    
+  &-circle
+    border-radius 50%
+    letter-spacing normal
+    line-height $button-min-height
+    min-height $button-min-height
+    padding $button-circle-padding
+    
+    .ripple-container
+      border-radius 50%
+    
+  &-icon
+    background transparent
+    box-shadow none
+    position relative
+    border-radius 50%
+    border-color transparent
+    height auto
+    width auto
+    min-height initial
+    padding 0
+    
+    i
+      padding .2em
+    
+    &:hover
+      background $button-icon-hover-background
+      box-shadow none
+    
+  &-large
+    min-height $button-large-min-height
+    line-height $button-large-line-height
+    padding $button-large-padding
+    
+    &.btn-circle
+      width $button-large-circle-width
+      padding $button-large-circle-padding
+    
+    i
+      font-size $button-large-circle-font-size
+  
+  &-loading
+    .icon
+      animation MoreLoadingAnimation 1.3s infinite ease
+    
+    // pointer-events none
+    
+    .btn-content
+      // display none
+      // opacity 0
+
+  &-outline
+    border 1px solid currentColor
+    background transparent !important
+    box-shadow none
+    color $button-background
+    
+    &:hover
+      box-shadow none
+    
+  &-raised
+    will-change box-shadow
+    
+    @extend .z-depth-1
+    
+    &:disabled
+      &:hover
+        @extend .z-depth-1
+    
+    &:hover
+      @extend .z-depth-1-half
+    
+  &-round
+    border-radius 2rem
+    
+  &-small
+    min-height $button-small-min-height
+    line-height $button-small-line-height
+    
+    &.btn-circle
+      width $button-small-circle-width
+      padding $button-small-circle-padding
+      
+      i
+        font-size $button-small-circle-font-size
+        
+  &-content
+    display flex
+    justify-content center
+    align-items center
+    transition $primary-transition
+    flex 1
+    letter-spacing $button-content-letter-spacing
+    margin-right $button-content-margin-right
+      
+  // &-loading
+  //   position absolute
+  //   width 100%
+  //   height 100%
+  //   left 0
+  //   top 0
+  //   display flex
+  //   justify-content center
+  //   align-items center
+    
+  .icon
+    &-left
+      margin-right 1rem
+      line-height inherit
+    
+    &-right
+      margin-left 1rem
+      line-height inherit
+      
+  .progress-circular
+    height 20px !important

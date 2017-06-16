@@ -11,8 +11,10 @@ const layout = r => require(['../pages/layout'], r)
 // 单项懒加载
 const home = r => require(['../pages/home'], r)
 const aboutUs = r => require(['../pages/aboutUs'], r)
-// 用户登录登录
-const loginUser = r => require(['../pages/login'], r)
+// 用户医生登录登录
+const loginLayout = r => require(['../pages/nubrace/nubrace'], r)
+const generalLogin = r => require(['../pages/nubrace/general'], r)
+const doctorLogin = r => require(['../pages/nubrace/doctor'], r)
 
 // 分组懒加载
 // const goods = r => require.ensure([], () => r(require('../components/goods/goods')), 'body')
@@ -36,18 +38,39 @@ export default new Router({
       path: '/',
       component: layout,
       name: 'home',
-      // redirect: '/home',
-      meta: {
-        requireAuth: true
-      },
+      redirect: '/home',
+      // meta: {
+      //   requireAuth: true
+      // },
       children: [{
         path: 'home',
         component: home
+      }, {
+        path: '/aboutUs',
+        name: 'aboutUs',
+        component: aboutUs
       }]
     },
-    {path: '/aboutUs', component: aboutUs},
-    {path: '/login', component: loginUser},
-    {path: '*', redirect: '/'}
+    // 登录路由
+    {
+      path: '/nubrace',
+      name: 'nubrace',
+      redirect: '/nubrace/general',
+      component: loginLayout,
+      children: [
+        {
+          path: 'general',
+          name: 'generalLogin',
+          component: generalLogin
+        },
+        {
+          path: 'doctor',
+          name: 'doctorLogin',
+          component: doctorLogin
+        }
+      ]
+    },
+    {path: '*', redirect: '/home'}
   ]
 })
 
