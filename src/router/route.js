@@ -6,7 +6,8 @@ import Router from 'vue-router'
 // import seller from '../components/seller/seller'
 // import ratings from '../components/ratings/ratings'
 
-// 页面路由
+// layout
+const layout = r => require(['../pages/layout'], r)
 // 单项懒加载
 const home = r => require(['../pages/home'], r)
 const aboutUs = r => require(['../pages/aboutUs'], r)
@@ -26,18 +27,40 @@ const loginUser = r => require(['../pages/login'], r)
 
 Vue.use(Router)
 
-
 export default new Router({
   mode: 'history',
   base: __dirname,
   linkActiveClass: 'active',
   routes: [
-    {path: '/', redirect: '/home'},
-    {path: '/home', component: home},
+    {
+      path: '/',
+      component: layout,
+      name: 'home',
+      // redirect: '/home',
+      meta: {
+        requireAuth: true
+      },
+      children: [{
+        path: 'home',
+        component: home
+      }]
+    },
     {path: '/aboutUs', component: aboutUs},
-    {path: '/login/user', component: loginUser},
+    {path: '/login', component: loginUser},
     {path: '*', redirect: '/'}
   ]
 })
 
-
+// export const asyncRouterMap = [
+//   {
+//     path: '/permission',
+//     component: layout,
+//     redirect: '/permission/index',
+//     name: '权限测试',
+//     icon: 'quanxian',
+//     meta: {role: ['admin']},
+//     noDropdown: true,
+//     children: [{path: 'index', component: Permission, name: '权限测试页', meta: {role: ['admin']}}]
+//   },
+//   {path: '*', redirect: '/404', hidden: true}
+// ]

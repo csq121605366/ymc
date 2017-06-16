@@ -50,8 +50,26 @@ Vue.prototype.$message = Message
 // 路由
 router.beforeEach((to, from, next) => {
   // to 和 from 都是 路由信息对象
-  NProgress.start() // 开启Progress
+  // 判断该路由是否需要登录权限
+  console.log(from)
   next()
+  // if (to.meta.requireAuth) {
+  //   // 通过vuex state获取当前的token是否存在
+  //   if (store.state.token) {
+  //     console.log(store.state.token)
+  //     // 开启Progress
+  //     NProgress.start()
+  //     next()
+  //   } else {
+  //     next({
+  //       path: '/login'
+  //       // 将跳转的路由path作为参数，登录成功后跳转到该路由
+  //       // query: {redirect: to.fullPath}
+  //     })
+  //   }
+  // } else {
+  //   next()
+  // }
 })
 // 路由结束
 router.afterEach(() => {
