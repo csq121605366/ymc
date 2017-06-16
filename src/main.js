@@ -22,7 +22,7 @@ import {
   Input,
   Message
 } from 'element-ui'
-import App from './App'       // 路由挂载
+import App from './App' // 路由挂载
 import router from './router/route' // 路由列表
 import store from './store/store'
 
@@ -82,4 +82,3 @@ new Vue({
   store,
   render: h => h(App)
 })
-
