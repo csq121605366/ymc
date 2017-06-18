@@ -85,3 +85,16 @@ exports.aboutUs = Mock.mock({
     }
   }
 })
+
+exports.checkUserName = Mock.mock({
+  status: 1,
+  result: true,
+  info: '验证通过'
+})
+
+exports.sendCode = Mock.mock({
+  status: 1,
+  result: true,
+  info: '验证码已发送，请注意查收',
+  code: '324334'
+})

@@ -1,10 +1,10 @@
 
 // 页面获取内容api
 
-import fetch from '../utils/fetch';
+import axios from '../utils/axios';
 
 export function getAboutUs() {
-  return fetch({
+  return axios({
     url: '/api/aboutUs',
     method: 'get'
   });

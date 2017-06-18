@@ -25,17 +25,16 @@ footer, header, menu, nav, section {
   display: block;
 }
 
-body {
+body{
   line-height: 1;
+  height:100%;
 }
-
-blockquote, q {
-  quotes: none;
+html, body {
+  width: 100%;
 }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: none;
+html{
+  height:100%;
+  display: table;
 }
 
 table {
@@ -76,9 +75,6 @@ li {
   -webkit-border-radius: 6px;
 }
 
-html, body {
-  width: 100%;
-}
 
 body {
   -webkit-text-size-adjust: none;
@@ -105,9 +101,16 @@ body {
 .bg-black{
   background-color: #292e31;
 }
+
 //字体颜色
 .tc-gray{
   color: #999;
+}
+.tc-main{
+  color: #259cef;
+}
+.tc-orange{
+  color: #fc6c1e;
 }
 //字体大小
 .tf-small{
@@ -120,3 +123,6 @@ body {
   font-size: 0;
 }
 
+.center{
+  text-align: center;
+}

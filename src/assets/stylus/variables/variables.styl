@@ -1,0 +1,232 @@
+// theme
+$body-font-family := "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif
+$body-bg := #fff
+$color-root := $grey.darken-3
+$font-size-root := 14px
+$line-height-root := 20px
+$theme := {
+  primary: $blue.base,
+  secondary: $grey.base,
+  info: $blue.base,
+  warning: $amber.base,
+  error: $red.base,
+  success: $green.base
+}
+
+$color-pack := true
+
+
+// Grid
+// ============================================================
+$grid-breakpoints := {
+  xs: 0
+  sm: 576px
+  md: 768px
+  lg: 992px
+}
+$container-max-widths := {
+  sm: $grid-breakpoints.sm * .9,
+  md: $grid-breakpoints.md * .9,
+  lg: $grid-breakpoints.lg * .9
+}
+$grid-gutter := 2rem
+$grid-outer-margin := 2rem
+$grid-gutter-full := $grid-gutter * .25 * -1
+$grid-gutter-half := $grid-gutter * .25
+$grid-columns := 12
+
+
+// Space
+// ============================================================
+$space := 1rem
+$space-x := $space
+$space-y := $space
+$spaces := {
+  zero: {
+    x: 0,
+    y: 0
+  },
+  one: {
+    x: ($space-x * .25),
+    y: ($space-y * .25)
+  },
+  two: {
+    x: ($space-x * .5),
+    y: ($space-y * .5)
+  },
+  three: {
+    x: $space-x,
+    y: $space-y
+  },
+  four: {
+    x: ($space-x * 1.5),
+    y: ($space-y * 1.5)
+  },
+  five: {
+    x: ($space-x * 3),
+    y: ($space-y * 3)
+  }
+}
+
+
+// Headings
+// ============================================================
+$heading-color := $grey.darken-3
+$headings := {
+  h1: {
+    size: 3.2rem,
+    weight: 400
+  },
+  h2: {
+    size: 2.8rem,
+    weight: 400
+  },
+  h3: {
+    size: 2.5rem,
+    weight: 400
+  },
+  h4: {
+    size: 2.2rem,
+    weight: 400
+  },
+  h5: {
+    size: 1.9rem,
+    weight: 400
+  },
+  h6: {
+    size: 1.5rem,
+    weight: 500
+  }
+}
+$heading-base := 1rem
+$heading-growth := .6
+
+// Transitions
+// ============================================================
+
+$primary-transition := all 0.3s cubic-bezier(0, 0, .2, 1)
+$secondary-transition := all 0.2s ease-out
+
+
+// Alert
+// ============================================================
+
+$alert-color := inherit
+$alert-border-radius := 0
+$alert-border-width := 4px 0 0 0
+$alert-font-size := 1.1rem
+$alert-icon-color := rgba(#000, .3)
+$alert-icon-font-size := 2rem
+$alert-padding := .5rem 1rem
+$alert-margin := $spaces.one.y auto
+
+// Badges
+// ============================================================
+
+$badge-border-radius := 50%
+$badge-color := #fff
+$badge-font-family := $body-font-family
+$badge-font-size := .9rem
+$badge-height := 22px
+$badge-top := 0
+$badge-right := 0
+$badge-width := 22px
+$badge-offset := 10px
+
+// Breadcrumb
+// ============================================================
+
+$breadcrumb-flex := 0 1 auto
+$breadcrumb-height := 40px
+$breadcrumb-item-font-size := 1rem
+$breadcrumb-margin := 0
+$breadcrumb-padding := 0 1rem
+
+/** Buttons */
+// ============================================================
+
+
+// Base
+$button-background := $grey.lighten-2
+$button-border := none
+$button-border-radius := 2px
+$button-color := inherit
+$button-disabled-opacity := .5
+$button-padding-left := 14px
+$button-padding-top := 0
+$button-min-height := 36px
+$button-text-transform := uppercase
+$button-transition := all .2s ease-out
+$button-font-size := 14px
+$button-font-weight := 500
+$button-content-letter-spacing := .5px
+$button-content-margin-right := -.5px
+
+// Flat
+$button-flat-hover := rgba(158, 158, 158, .2)
+
+// Floating
+$button-circle-padding := .4rem
+$button-circle-large-padding := .5rem
+
+// Small
+$button-small-min-height := 2rem
+$button-small-line-height := 2rem
+$button-small-circle-width := 2rem
+$button-small-circle-font-size := $button-min-height * .4
+$button-small-circle-padding := 0
+
+// Large
+$button-large-min-height := 3rem
+$button-large-line-height := 3rem
+$button-large-padding := 0 4rem
+$button-large-circle-font-size := $button-min-height * 0.7
+$button-large-circle-width := 4rem
+$button-large-circle-padding := 1rem
+
+// Icon
+$button-icon-hover-background := rgba($grey.lighten-1, .4)
+$button-icon-padding := $button-padding-left * .3
+$button-icon-font-size := $button-font-size * 1.5
+
+// Card
+// ============================================================
+
+$card-actions-border-top := 1px solid rgba(#000, .1)
+$card-background := #fff
+$card-padding := 14px
+$card-border-radius := 2px
+$card-title-text-size := 1.5rem
+$card-title-text-letter-spacing := .1rem
+$card-title-text-font-weight := 400
+$card-row-min-height := 4rem
+$card-actions-font-size := .9rem
+$card-actions-button-padding := .7rem
+
+// Tag
+// ============================================================
+
+$tag-background := $grey.lighten-2
+$tag-background-active := $grey.lighten-3
+$tag-border := 1px solid $grey.lighten-2
+$tag-border-radius := 2rem
+$tag-font-size := .8rem
+$tag-rect-border-radius := 0
+$tag-icon-font-size := 1.2rem
+$tag-padding := 0 $tag-font-size
+$tag-outline-background := transparent !important
+$tag-outline-color := $grey.base
+$tag-min-height := 25px
+$tag-small-min-height := 20px
+$tag-small-padding := 0 .2rem
+
+
+// Waves
+// ============================================================
+
+$waves-container-color := #fff
+$waves-animation-background := currentColor
+$waves-animation-transition := .7s transform cubic-bezier(.2, .4, .4, .9), .3s opacity cubic-bezier(.2, .4, .4, .1)
+$waves-animation-visible-opacity := .3
+
+

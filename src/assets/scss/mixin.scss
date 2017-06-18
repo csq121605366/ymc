@@ -1,6 +1,6 @@
-@mixin clearfix (){
+@mixin clearfix() {
   *zoom: 1;
-  &:after{
+  &:after {
     display: table;
   }
   &:before,
@@ -11,5 +11,84 @@
   }
   &:after {
     clear: both;
+  }
+}
+
+@mixin blur($num:10) {
+  -webkit-filter: blur($num + px); /* Chrome, Opera */
+  -moz-filter: blur($num + px);
+  -ms-filter: blur($num + px);
+  filter: blur($num + px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=$num, MakeShadow=false); /* IE6~IE9 */
+}
+
+@mixin materInput {
+  .el-form-item__content {
+    line-height: 34px;
+    position: relative;
+  }
+  //外框
+  .el-form-item {
+    position: relative;
+    margin-top: 26px;
+    margin-bottom: 0;
+  }
+  //label
+  .el-form-item__label {
+    padding-bottom: 0;
+  }
+  .el-input {
+    height: 34px;
+  }
+  //input框
+  .el-input__inner {
+    padding: 0 0 0 10px;
+    border-radius: 0;
+    height: 100%;
+    border: 0;
+    border-bottom: 1px solid #999;
+  }
+  .el-checkbox__inner {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    &:after {
+      top: 1px;
+      height: 5px;
+      left: 3px;
+      width: 3px;
+    }
+  }
+  .el-checkbox__label {
+    color: #999;
+  }
+
+  .el-form-item__error {
+    //position: absolute;
+    //right: 0;
+    //left:auto;
+    //line-height: 34px;
+    //padding-top: 0;
+    //top: 0;
+    //bottom: 0;
+  }
+  .is-error {
+    .el-input-group__append {
+      color: #ff0000;
+    }
+  }
+  .el-input-group__append {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    padding: 0;
+    left: auto;
+    width: auto;
+    line-height: 34px;
+    background-color: transparent;
+    border: 0;
+  }
+  .el-input__icon {
+    right: 20px
   }
 }

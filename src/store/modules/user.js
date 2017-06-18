@@ -1,4 +1,4 @@
-import { loginByEmail, logout, getInfo } from '../../api/login'
+import { loginByEmail, logout, getInfo } from '../../api/user'
 import Cookies from 'js-cookie'
 import { Message } from 'element-ui'
 const user = {
