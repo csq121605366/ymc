@@ -55,9 +55,6 @@ Vue.use(CheckboxGroup)
 Vue.use(Form)
 Vue.use(FormItem)
 
-
-
-
 // eslint单行验证
 /* eslint-disable no-new */
 
@@ -65,26 +62,27 @@ Vue.use(FormItem)
 router.beforeEach((to, from, next) => {
   // to 和 from 都是 路由信息对象
   // 判断该路由是否需要登录权限
-  if (to.meta.requireAuth) {
-    // 通过vuex state获取当前的token是否存在
-    // if (store.state.token) {
-    //   console.log(store.state.token)
-    //   // 开启Progress
-    //   NProgress.start()
-    //   next()
-    // } else {
-    //   next({
-    //     path: '/login'
-    //     // 将跳转的路由path作为参数，登录成功后跳转到该路由
-    //     // query: {redirect: to.fullPath}
-    //   })
-    // }
-    NProgress.start()
-    next()
-  } else {
-    NProgress.start()
-    next()
-  }
+  // if (to.meta.requireAuth) {
+  //   // 通过vuex state获取当前的token是否存在
+  //   // if (store.state.token) {
+  //   //   console.log(store.state.token)
+  //   //   // 开启Progress
+  //   //   NProgress.start()
+  //   //   next()
+  //   // } else {
+  //   //   next({
+  //   //     path: '/login'
+  //   //     // 将跳转的路由path作为参数，登录成功后跳转到该路由
+  //   //     // query: {redirect: to.fullPath}
+  //   //   })
+  //   // }
+  //   NProgress.start()
+  //   next()
+  // } else {
+  //   NProgress.start()
+  //   next()
+  // }
+  next()
 })
 // 路由结束
 router.afterEach(() => {

@@ -5,6 +5,7 @@ const app = {
     // 请求接口0为可用
     STATUS: 0,
     INTERVAL: 0.6,
+    NEWSINTERVAL: 3,
     VALIDTYPE: {
       'require': /[\w\W]+/,
       'password': /^(?![A-Z]+$)(?![a-z]+$)(?!\d+$)(?![\W_]+$)\S{6,16}$/,

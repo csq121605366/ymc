@@ -7,15 +7,17 @@ import Router from 'vue-router'
 // import ratings from '../components/ratings/ratings'
 
 // layout
-const layout = r => require(['../pages/layout'], r)
+const layout = r => require(['../pages/layout/layout'], r)
 // 单项懒加载
-const home = r => require(['../pages/home'], r)
-const aboutUs = r => require(['../pages/aboutUs'], r)
+const home = r => require(['../pages/home/home'], r)
+const aboutUs = r => require(['../pages/aboutUs/aboutUs'], r)
 // 用户医生登录登录
 const nubrace = r => require(['../pages/nubrace/nubrace'], r)
 const generalLogin = r => require(['../pages/nubrace/general'], r)
 const doctorLogin = r => require(['../pages/nubrace/doctor'], r)
 const retrieve = r => require(['../pages/nubrace/retrieve'], r)
+const registeSuccess = r => require(['../pages/nubrace/registeSuccess'], r)
+
 // 分组懒加载
 // const goods = r => require.ensure([], () => r(require('../components/goods/goods')), 'body')
 // const seller = r => require.ensure([], () => r(require('../components/seller/seller')), 'body')
@@ -72,6 +74,18 @@ export default new Router({
           path: 'retrieve',
           name: 'retrieve',
           component: retrieve
+        },
+        {
+          path: 'registeSuccess',
+          name: 'registeSuccess',
+          component: registeSuccess,
+          beforeEnter: (to, from, next) => {
+            if (from.name === 'generalLogin') {
+              next()
+            } else {
+              next('/home')
+            }
+          }
         }
       ]
     },

@@ -70,6 +70,9 @@
             <el-form-item prop="agree">
               <el-checkbox-group v-model="registerForm.agree">
                 <el-checkbox name="type">已阅读并同意
+
+
+
                   <router-link class="tc-main" to="/">《注册协议》</router-link>
                 </el-checkbox>
               </el-checkbox-group>
@@ -158,6 +161,7 @@
       submitForm(formName) {
         this.$refs[formName].validate((valid) => {
           if (valid) {
+
           } else {
             return false
           }

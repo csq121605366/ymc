@@ -15,6 +15,7 @@
 
 <style lang="scss">
   @import "../../assets/scss/mixin";
+
   .c-login {
     position: relative;
     height: 100%;

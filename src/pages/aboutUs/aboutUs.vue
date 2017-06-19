@@ -131,7 +131,7 @@
 <script type="text/javascript">
   //  获取数据
   import { mapState } from 'vuex'
-  import { getAboutUs } from '../api/pages'
+  import { getAboutUs } from '../../api/pages'
   export default{
     data() {
       return {

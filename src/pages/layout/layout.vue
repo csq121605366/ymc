@@ -13,8 +13,8 @@
 </template>
 
 <script>
-  import vHeader from '../components/header/header.vue'
-  import vFooter from '../components/footer/footer.vue'
+  import vHeader from '../../components/header/header.vue'
+  import vFooter from '../../components/footer/footer.vue'
   export default{
     components: {
       vHeader,
@@ -24,7 +24,7 @@
 </script>
 
 <style>
-  @import "../assets/scss/mixin.scss";
+  @import "../../assets/scss/mixin.scss";
   .app{
     display: flex;
     flex-flow:column;

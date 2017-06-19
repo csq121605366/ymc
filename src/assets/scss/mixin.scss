@@ -92,3 +92,22 @@
     right: 20px
   }
 }
+
+@mixin textOverflow($lineHeight:18,$lineNum:3,$bgc:white) {
+  position: relative;
+  line-height: $lineHeight+px;
+  /* 3 times the line-height to show 3 lines */
+  height: $lineHeight * $lineNum + px;
+  overflow: hidden;
+  &::after {
+    content: "";
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    padding: 0 $lineHeight+px 1px 40px;
+    background: linear-gradient(to left, $bgc 20%, transparent )
+  }
+}

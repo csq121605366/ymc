@@ -83,6 +83,9 @@ body {
 
 .iconfont{
   vertical-align: middle;
+  &:before{
+    vertical-align: middle;
+  }
 }
 
 .cursor{
@@ -96,10 +99,14 @@ body {
 
 .l-wrap{
   width:1200px;
+  position: relative;
   margin:0 auto;
 }
 .bg-black{
   background-color: #292e31;
+}
+.bg-main{
+  background-color: #259cef;
 }
 
 //字体颜色
@@ -125,4 +132,10 @@ body {
 
 .center{
   text-align: center;
+}
+
+//功能
+.response-img{
+  max-width:100%;
+  height:auto;
 }
