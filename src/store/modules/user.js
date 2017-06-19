@@ -1,11 +1,11 @@
-import { loginByEmail, logout, getInfo } from '../../api/login'
+import { login, logout, getInfo } from '../../api/user'
 import Cookies from 'js-cookie'
 import { Message } from 'element-ui'
 const user = {
   state: {
     user: '',
     status: '',
-    email: '',
+    username: '',
     code: '',
     uid: undefined,
     auth_type: '',
@@ -32,8 +32,8 @@ const user = {
     SET_UID: (state, uid) => {
       state.uid = uid
     },
-    SET_EMAIL: (state, email) => {
-      state.email = email
+    SET_USERNAME: (state, username) => {
+      state.username = username
     },
     SET_INTRODUCTION: (state, introduction) => {
       state.introduction = introduction
@@ -60,17 +60,18 @@ const user = {
       state.user = ''
     }
   },
-
   actions: {
-    // 邮箱登录
-    LoginByEmail({commit}, userInfo) {
-      const email = userInfo.email.trim()
+    // 登录
+    Login({commit}, userInfo) {
+      console.log(userInfo)
+      let username = userInfo.username.trim()
+      let password = userInfo.password.trim()
       return new Promise((resolve, reject) => {
-        loginByEmail(email, userInfo.password).then(response => {
-          const data = response.data
-          Cookies.set('Admin-Token', response.data.token)
-          commit('SET_TOKEN', data.token)
-          commit('SET_EMAIL', email)
+        login(username, password).then(response => {
+          let res = response.data
+          Cookies.set('Admin-Token', res.token)
+          commit('SET_TOKEN', res.token)
+          commit('SET_USERNAME', username)
           resolve()
         }).catch(error => {
           console.log(error)

@@ -59,7 +59,7 @@
       width: 3px;
     }
   }
-  .el-checkbox__label{
+  .el-checkbox__label {
     color: #999;
   }
 
@@ -72,20 +72,23 @@
     //top: 0;
     //bottom: 0;
   }
-  .is-error{
-    .el-input-group__append{
+  .is-error {
+    .el-input-group__append {
       color: #ff0000;
     }
   }
-  .el-input-group__append{
+  .el-input-group__append {
     position: absolute;
-    right:10px;
-    top:0;
-    padding:0;
-    left:auto;
-    width:auto;
-    line-height:34px;
+    right: 10px;
+    top: 0;
+    padding: 0;
+    left: auto;
+    width: auto;
+    line-height: 34px;
     background-color: transparent;
-    border:0;
+    border: 0;
+  }
+  .el-input__icon {
+    right: 20px
   }
 }

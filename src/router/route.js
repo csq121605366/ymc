@@ -12,10 +12,10 @@ const layout = r => require(['../pages/layout'], r)
 const home = r => require(['../pages/home'], r)
 const aboutUs = r => require(['../pages/aboutUs'], r)
 // 用户医生登录登录
-const loginLayout = r => require(['../pages/nubrace/nubrace'], r)
+const nubrace = r => require(['../pages/nubrace/nubrace'], r)
 const generalLogin = r => require(['../pages/nubrace/general'], r)
 const doctorLogin = r => require(['../pages/nubrace/doctor'], r)
-
+const retrieve = r => require(['../pages/nubrace/retrieve'], r)
 // 分组懒加载
 // const goods = r => require.ensure([], () => r(require('../components/goods/goods')), 'body')
 // const seller = r => require.ensure([], () => r(require('../components/seller/seller')), 'body')
@@ -56,7 +56,7 @@ export default new Router({
       path: '/nubrace',
       name: 'nubrace',
       redirect: '/nubrace/general',
-      component: loginLayout,
+      component: nubrace,
       children: [
         {
           path: 'general',
@@ -67,6 +67,11 @@ export default new Router({
           path: 'doctor',
           name: 'doctorLogin',
           component: doctorLogin
+        },
+        {
+          path: 'retrieve',
+          name: 'retrieve',
+          component: retrieve
         }
       ]
     },

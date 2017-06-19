@@ -4,7 +4,7 @@
 import Vue from 'vue'
 import NProgress from 'nprogress' // Progress 进度条
 import 'nprogress/nprogress.css' // Progress 进度条 样式
-import './assets/stylus/main.styl'
+
 import '../theme/index.css'
 import './assets/scss/mycss.scss'
 import {
@@ -28,7 +28,7 @@ import {
   Form,
   FormItem
 } from 'element-ui'
-import App from './App'       // 路由挂载
+import App from './App' // 路由挂载
 import router from './router/route' // 路由列表
 import store from './store/store'
 
@@ -54,6 +54,9 @@ Vue.use(Checkbox)
 Vue.use(CheckboxGroup)
 Vue.use(Form)
 Vue.use(FormItem)
+
+
+
 
 // eslint单行验证
 /* eslint-disable no-new */
@@ -94,4 +97,3 @@ new Vue({
   store,
   render: h => h(App)
 })
-

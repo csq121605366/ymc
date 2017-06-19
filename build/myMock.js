@@ -19,4 +19,17 @@ apiRouter.all('/aboutUs', function (req, res) {
   res.json(appData.aboutUs)
 })
 
+apiRouter.all('/checkUserName', function (req, res) {
+  res.json(appData.checkUserName)
+})
+
+apiRouter.all('/sendCode', function (req, res) {
+  res.json(appData.sendCode)
+})
+
+apiRouter.all('/login', function (req, res) {
+  res.json(appData.login)
+})
+
+
 module.exports.apiRouter = apiRouter
